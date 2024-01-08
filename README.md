@@ -6,6 +6,7 @@ Code contributed by teacher, classmates, and in Stack Overflow incude:
      LastRow = ws.Cells(Rows.Count, 1).End(xlUp).Row
 
 How to identify FirstOpenPrice provided by Tianyue Li
+
 'If adjacent cells don't have same Ticker value
       If ws.Cells(r - 1, 1).Value <> ws.Cells(r, 1) Then
       Ticker = ws.Cells(r, 1).Value
@@ -13,6 +14,7 @@ How to identify FirstOpenPrice provided by Tianyue Li
       FirstOpenPrice = ws.Cells(r, 3).Value
 
 How to format numbers as percentages and color code them provided by Melissa Krachmer
+
   'Color code Yearly and % Change cells: green if positive, red if negative
                 If PercentChange >= 0 Then
                  ws.Range("K" & SummaryTableRow).Interior.ColorIndex = 4
